@@ -1,5 +1,5 @@
 ---
-name: Continous integration Build
+name: Continuous integration Build
 
 on:
   push:

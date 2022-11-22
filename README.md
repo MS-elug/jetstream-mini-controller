@@ -1,3 +1,5 @@
+![Continuous integration](https://github.com/AmadeusITGroup/jetstream-mini-controller/actions/workflows/build-ci.yml/badge.svg)
+
 # Jetstream mini-controller
 
 A micro-controller for [Nats](https://nats.io/) Jetstream items.
