@@ -26,13 +26,13 @@ If release name contains chart name it will be used as a full name.
 {{- define "jetstream-mini-controller.container.image" -}}
 {{- $imageName :=  .Values.image.name -}}
 {{- $imageName = .Values.image.native | ternary (printf "%s%s" $imageName "-native") $imageName -}}
-{{- if .Values.global.infra.imageRegistry -}}
-image: {{ .Values.global.infra.imageRegistry }}/{{ $imageName }}:{{ .Values.image.version }}
+{{- if .Values.image.registry -}}
+image: {{ .Values.image.registry }}/{{ $imageName }}:{{ .Values.image.version }}
 # Always pull images in local dev if registry specified (avoid tricky issues in iterative testing)
-imagePullPolicy: {{ .Values.global.imagePullPolicy | default "Always" }}
+imagePullPolicy: {{ .Values.image.pullPolicy | default "Always" }}
 {{- else -}}
 image: {{ $imageName }}:{{ .Values.image.version }}
-imagePullPolicy: {{ .Values.global.imagePullPolicy | default "IfNotPresent" }}
+imagePullPolicy: {{ .Values.image.pullPolicy | default "IfNotPresent" }}
 {{- end -}}
 {{- end -}}
 
