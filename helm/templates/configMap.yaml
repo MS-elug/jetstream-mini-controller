@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "jetstream-mini-controller.fullname" . }}-cm
+  labels:
+    {{- include "jetstream-mini-controller.labels" . | nindent 4 }}
+data:
+  {{ .Values.config.fileName }}: {{ include "jetstream-mini-controller.config" . | b64enc }}

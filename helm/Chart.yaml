@@ -1,0 +1,9 @@
+apiVersion: v2
+name: jetstream-mini-controller
+description: A simple jetstream controller microservice using configmaps to manage configurations
+
+type: application
+
+version: ${project.version}
+
+appVersion: "${project.version}"

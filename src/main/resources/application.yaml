@@ -1,0 +1,19 @@
+nats:
+  url: nats://localhost:7656
+quarkus:
+  log:
+    handler:
+      splunk:
+        enabled: false
+config:
+  fileName: jetstream-configs.txt
+
+scheduler: 30s
+
+"%test":
+  quarkus:
+    log:
+      level: DEBUG
+  config:
+    mount:
+      path: "src/test/resources"

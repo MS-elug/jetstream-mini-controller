@@ -1,0 +1,13 @@
+global:
+  infra:
+    imageRegistry: localhost:32000
+
+
+remoteDebug:
+  enabled: true
+resources:
+  requests:
+    memory: 500Mi
+env:
+  QUARKUS_LOG_LEVEL: "INFO"
+streams: []

@@ -1,0 +1,49 @@
+---
+name: Continous integration Build
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.gitignore'
+      - 'LICENSE'
+      - '*.md'
+      - '*.adoc'
+      - '*.txt'
+  pull_request:
+    paths-ignore:
+      - '.gitignore'
+      - 'LICENSE'
+      - '*.md'
+      - '*.adoc'
+      - '*.txt'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java-version: [ 11, 17 ]
+    name: Build with Java ${{ matrix.java-version }}
+    steps:
+      - uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            maven-
+      - name: Set up Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: v3.8.1
+      - name: Repo checkout
+        uses: actions/checkout@v3
+      - name: Java setup
+        uses: actions/setup-java@v3
+        with:
+          java-version: ${{ matrix.java-version }}
+          distribution: temurin
+      - name: Build with Maven
+        run: |
+          mvn -B clean verify
