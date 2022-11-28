@@ -2,6 +2,17 @@ apiVersion: v1
 entries:
   jetstream-mini-controller:
   - apiVersion: v2
+    appVersion: 1.2.1
+    created: "2022-11-28T14:55:47.18412625Z"
+    description: A simple jetstream controller microservice using configmaps to manage
+      configurations
+    digest: 33a7c3083a73dcce4ab606c1a664d7af60c421fb8a6e7e34465d513157f0f1b4
+    name: jetstream-mini-controller
+    type: application
+    urls:
+    - https://github.com/AmadeusITGroup/jetstream-mini-controller/releases/download/1.2.1/jetstream-mini-controller-1.2.1.tgz
+    version: 1.2.1
+  - apiVersion: v2
     appVersion: 1.2.0
     created: "2022-11-22T10:53:46.702335398Z"
     description: A simple jetstream controller microservice using configmaps to manage
@@ -23,4 +34,4 @@ entries:
     urls:
     - https://github.com/AmadeusITGroup/jetstream-mini-controller/releases/download/1.0.0/jetstream-mini-controller-1.0.0.tgz
     version: 1.0.0
-generated: "2022-11-22T10:53:46.702345698Z"
+generated: "2022-11-28T14:55:47.18413565Z"
