@@ -47,7 +47,7 @@
     <jnats.version>2.16.6</jnats.version>
     <lombok.version>1.18.24</lombok.version>
     <microprofile-health-api.version>4.0.1</microprofile-health-api.version>
-    <quarkus-logging-splunk.version>2.5.0</quarkus-logging-splunk.version>
+    <quarkus-logging-splunk.version>2.5.1</quarkus-logging-splunk.version>
     <quarkus.version>2.15.3.Final</quarkus.version>
     <apache-collections.version>4.4</apache-collections.version>
 
