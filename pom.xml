@@ -51,7 +51,7 @@
     <quarkus.version>2.16.4.Final</quarkus.version>
     <apache-collections.version>4.4</apache-collections.version>
 
-    <nats-embedded.version>2.1.0</nats-embedded.version>
+    <nats-embedded.version>2.1.1</nats-embedded.version>
     <spring-beans.version>5.3.24</spring-beans.version>
   </properties>
   <dependencyManagement>
