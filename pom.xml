@@ -44,7 +44,7 @@
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
     <maven-release-plugin.version>3.0.0-M7</maven-release-plugin.version>
 
-    <jnats.version>2.16.8</jnats.version>
+    <jnats.version>2.16.9</jnats.version>
     <lombok.version>1.18.26</lombok.version>
     <microprofile-health-api.version>4.0.1</microprofile-health-api.version>
     <quarkus-logging-splunk.version>2.5.1</quarkus-logging-splunk.version>
