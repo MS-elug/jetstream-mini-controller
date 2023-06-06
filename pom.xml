@@ -42,7 +42,7 @@
     <helm-maven-plugin.version>6.6.0</helm-maven-plugin.version>
     <docker-maven-plugin.version>0.36.1</docker-maven-plugin.version>
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
-    <maven-release-plugin.version>3.0.0</maven-release-plugin.version>
+    <maven-release-plugin.version>3.0.1</maven-release-plugin.version>
 
     <jnats.version>2.16.11</jnats.version>
     <lombok.version>1.18.26</lombok.version>
