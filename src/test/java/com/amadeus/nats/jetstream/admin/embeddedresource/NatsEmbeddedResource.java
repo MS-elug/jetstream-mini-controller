@@ -10,7 +10,7 @@ import np.com.madanpokharel.embed.nats.ServerType;
 import org.apache.commons.io.FileUtils;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Field;

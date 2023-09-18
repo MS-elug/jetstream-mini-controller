@@ -43,16 +43,18 @@
     <docker-maven-plugin.version>0.36.1</docker-maven-plugin.version>
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
     <maven-release-plugin.version>3.0.1</maven-release-plugin.version>
+    <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
 
     <jnats.version>2.16.14</jnats.version>
-    <lombok.version>1.18.26</lombok.version>
+    <lombok.version>1.18.28</lombok.version>
     <microprofile-health-api.version>4.0.1</microprofile-health-api.version>
-    <quarkus-logging-splunk.version>2.5.1</quarkus-logging-splunk.version>
-    <quarkus.version>2.16.6.Final</quarkus.version>
+    <quarkus-logging-splunk.version>3.0.0</quarkus-logging-splunk.version>
+    <quarkus.version>3.2.4.Final</quarkus.version>
     <apache-collections.version>4.4</apache-collections.version>
 
     <nats-embedded.version>2.1.1</nats-embedded.version>
     <spring-beans.version>5.3.24</spring-beans.version>
+    <mockito-inline.version>5.2.0</mockito-inline.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -118,6 +120,7 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-inline</artifactId>
+      <version>${mockito-inline.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -238,6 +241,7 @@
         </plugin>
          <plugin>
           <artifactId>maven-resources-plugin</artifactId>
+           <version>${maven-resources-plugin.version}</version>
            <executions>
             <execution>
               <id>filter-helm-chart</id>

@@ -7,19 +7,14 @@ import com.amadeus.nats.jetstream.admin.model.KeyValueConfig;
 import com.amadeus.nats.jetstream.admin.model.StreamConfig;
 import io.nats.client.JetStreamApiException;
 import io.nats.client.api.KeyValueConfiguration;
-import io.nats.client.api.RetentionPolicy;
-import io.nats.client.api.StorageType;
 import io.nats.client.api.StreamConfiguration;
 import io.nats.client.api.StreamInfo;
 import io.quarkus.scheduler.Scheduled;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.collections4.CollectionUtils;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
 import java.io.IOException;
-import java.time.Duration;
-import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped
