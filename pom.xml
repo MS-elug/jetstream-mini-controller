@@ -4,7 +4,7 @@
   
   <groupId>com.amadeus.nats</groupId>
   <artifactId>jetstream-mini-controller</artifactId>
-  <version>2.0.2-SNAPSHOT</version>
+  <version>2.0.3</version>
 
   <url>https://github.com/AmadeusITGroup/jetstream-mini-controller</url>
 
