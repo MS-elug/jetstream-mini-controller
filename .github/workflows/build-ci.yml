@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java-version: [ 11, 17 ]
+        java-version: [ 17 ]
     name: Build with Java ${{ matrix.java-version }}
     steps:
       - uses: actions/cache@v3
