@@ -52,7 +52,7 @@
     <quarkus.version>3.8.3</quarkus.version>
     <apache-collections.version>4.4</apache-collections.version>
 
-    <nats-embedded.version>2.1.1</nats-embedded.version>
+    <nats-embedded.version>2.1.2</nats-embedded.version>
     <spring-beans.version>5.3.33</spring-beans.version>
     <mockito-inline.version>5.2.0</mockito-inline.version>
   </properties>
