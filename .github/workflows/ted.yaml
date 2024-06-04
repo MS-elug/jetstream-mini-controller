@@ -9,9 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Ted run
     steps:
-      # - uses: oleksiyrudenko/gha-git-credentials@v2-latest
-      #   with:
-      #     token: '${{ secrets.GITHUB_TOKEN }}'
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: TED run
         uses: OpenGuidou/ted@v0.9
         env:
