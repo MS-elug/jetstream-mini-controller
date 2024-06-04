@@ -13,7 +13,7 @@ jobs:
       #   with:
       #     token: '${{ secrets.GITHUB_TOKEN }}'
       - name: TED run
-        uses: OpenGuidou/ted@v0.8
+        uses: OpenGuidou/ted@v0.9
         env:
           OPENAI_API_VERSION: ${{ secrets.OPENAI_API_VERSION }}
           AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
