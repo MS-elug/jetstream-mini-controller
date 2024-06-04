@@ -20,5 +20,4 @@ jobs:
           AZURE_OPENAI_API_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
           EMBEDDING_DEPLOYMENT_NAME: ${{ secrets.EMBEDDING_DEPLOYMENT_NAME }}
         with:
-          git-repo: "${{github.repositoryUrl}}"
           ted-flavor: unit-tests
